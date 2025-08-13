@@ -1,0 +1,74 @@
+/** variable des couleurs **/
+
+:root {
+    --fond-principal:#0F0F0F;
+    --font-contenu:#1A1A1A;
+    --font-contours:#2E2E2E;
+    --texte-titre:#ffffff;
+    --texte-courant:#d1d1d1;
+    --texte-lien:#8f8f8f;
+    --objet-survol:#6E40C9;
+    --objet-permanent:#8B5CF6; 
+    --objet-clic:#9B6DED;
+}
+
+
+/** utilisation des couleur **/
+
+.couleur_font {
+    color: var(--fond-principal);
+}
+
+.couleur_contenu {
+    color: var(--fond-contenu);
+}
+
+.couleur_contours {
+    color: var(--fond-contours);
+}
+
+.couleur_titre {
+    color: var(--texte-titre);
+}
+
+.couleur_courant {
+    color: var(--texte-courant);
+}
+
+.couleur_lien {
+    color: var(--texte-lien);
+}
+
+.couleur_survol {
+    color: var(--objet-survol);
+}
+
+.couleur_permanent {
+    color: var(--objet-permanent);
+}
+
+.couleur_clic {
+    color: var(--objet-clic);
+}
+
+
+/** emplacement texte **/
+
+.emplacement_centre {
+    text-align: center;
+}
+
+.emplacement_start {
+    text-align: start;
+}
+
+.emplacement_end {
+    text-align: end;
+}
+
+
+/** effet visuel **/
+
+.bordure {
+    border-radius: 25px;
+}
