@@ -1,3 +1,11 @@
+body {
+    display: flex ;
+    height: 100vh ; /* pour prendre tout la place de la fenetre */
+    flex-direction: column; /* pour mettre les element en colum */
+    justify-content: space-between; /* repartit l'espace entre les element le premier en haut le dernier en bas */
+}
+
+
 /** variable des couleurs **/
 
 :root {
@@ -16,15 +24,15 @@
 /** utilisation des couleur **/
 
 .couleur_font {
-    color: var(--fond-principal);
+    background-color: var(--fond-principal);
 }
 
 .couleur_contenu {
-    color: var(--fond-contenu);
+    background-color: var(--font-contenu);
 }
 
 .couleur_contours {
-    color: var(--fond-contours);
+    background-color: var(--fond-contours);
 }
 
 .couleur_titre {
@@ -52,7 +60,7 @@
 }
 
 
-/** emplacement texte **/
+/** emplacement texte et objet **/
 
 .emplacement_centre {
     text-align: center;
@@ -66,9 +74,42 @@
     text-align: end;
 }
 
+.grille_total {
+    color: #0F0F0F;
+}
+
+.grille_touche {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-gap: 20px;
+}
+
+.grille_option {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+
 
 /** effet visuel **/
 
-.bordure {
+.bordure_logo {
+    border-radius: 50px;
+}
+
+.bordure_touche {
     border-radius: 25px;
+}
+
+.image {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.bannier_fin {
+    padding: 25px;
+    margin: 40px 400px ;
+    border-radius: 50px 50px 50px 50px;
 }
